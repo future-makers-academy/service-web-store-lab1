@@ -21,5 +21,6 @@ EXIT /B 0
 
 :Reset
 CALL :Down
-rm -rf ./docker/data
+:: rm -rf ./docker/data
+rmdir /s/q "docker/data"
 EXIT /B 0
